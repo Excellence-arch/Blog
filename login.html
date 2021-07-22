@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<style type="text/css">
+		center {
+			margin-top: 120px;
+		}
+		input {
+			margin: 7px;
+			padding: 6px;
+			width: 200px;
+		}
+		button {
+			padding: 7px;
+			background-color: green;
+			border-radius: 10px;
+			border: 0;
+			width: 50px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<input class="animate__animated animate__bounceInDown animate__delay-slow" type="text" id="uName" placeholder="Username"> <br>
+		<input class="animate__animated animate__bounceInUp animate__delay-slow" type="password" id="password" placeholder="password"> <br>
+		<button class="animate__animated animate__slideInLeft animate__delay-slow" onclick="validate()">Login</button>
+	</center>
+	<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

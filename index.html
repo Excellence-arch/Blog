@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			font-family: 'Helvetica'
+		}
+		header {
+			background-color: aqua;
+			height: 50px;
+		}
+		header nav ul li a{
+			list-style-type: none;
+			color: red;
+			text-decoration: none;
+		}
+
+		header nav ul {
+			float: right;
+			margin-top: 10px;
+		}
+
+		header nav ul li {
+			display: inline;
+			/*margin-top: 15px;*/
+			padding: 10px;
+		}
+
+		center {
+			margin-top: 70px;
+		}
+
+		input[type= 'button'] {
+			padding: 7px;
+			border: 0;
+			border-radius: 30px;
+			background-color: green;
+		}
+
+		input {
+			margin: 10px;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="login.html">Admin</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<center>
+			<input type="text" id="title" maxlength="15" placeholder="Title of your post"> <br>
+			<textarea id="postBody" placeholder="Body of your post" rows="5" cols="20"></textarea> <br>
+			<label>Picture:</label><input type="file" id="postImg"> <br>
+			<input type="button" value="Create Post" onclick="createPost()"> <br>
+		</center>
+	</main>
+
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
